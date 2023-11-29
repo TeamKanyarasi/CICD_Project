@@ -2,7 +2,7 @@ name: EC2 Deployment using Github actions
 on:
     push:
         branches:
-            - main
+            - prod
 jobs:
     deploy:
         name: Deploy Package

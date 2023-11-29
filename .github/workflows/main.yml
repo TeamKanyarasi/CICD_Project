@@ -24,9 +24,8 @@ jobs:
             echo ' Nginx running sucessfully.!!'
 
         - name: Final Deployment
-          run: |
-            uses: appleboy/ssh-action@v1.0.0
-            with:
+          uses: appleboy/ssh-action@v1.0.0
+          with:
               host: ${{ secrets.HOST }}
               username: ${{ secrets.USERNAME }}
               key: ${{ secrets.KEY }}
